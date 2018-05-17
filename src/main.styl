@@ -1,0 +1,82 @@
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+.Button
+	font-family: 'Exo'
+	cursor: pointer
+	border: 0
+	display: flex
+	align-items: center
+	justify-content: center
+	text-decoration: none
+	&_Align_Right
+		justify-content: flex-end
+	&_Align_Left
+		justify-content: flex-start
+	&_Size_Xxl
+		width: 340px
+		height: 100px
+	&_Size_Lg
+		width: 255px
+		height: 55px
+	&_Size_Sm
+		width: 165px
+		height: 45px
+	&_Color_White
+		background-color: #fff
+	&_Color_Red
+		background-color: #d64b4b
+	&_Border
+		border: 1px solid #f2f2f2
+	&_Color_Not
+		background-color: rgba(255, 255, 255, 0)
+		transition: 0.4s
+		&:hover
+			transition: 0.4s
+			.Button-Text
+				color: #d64b4b
+		&:active
+			background-color: #f1f1f1
+			transition: 0.4s
+	
+	
+	&-Text
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		top: -2px
+		letter-spacing: 0.07em
+		font-size: 16px
+		&_Color_Grey
+			color: #828282
+		&_Color_Black
+			color: rgba(79, 79, 79, 1)
+		&_Color_White
+			color: rgba(255, 255, 255, 1)
+		&_Color_Red
+			color: #d64b4b
+		&_Uppercase
+			font-family: 'Exo 2 Semi'
+			text-transform: uppercase
+		&_Margin25
+			margin-left: 25px
+
+.Header
+	text-align center
+	color #d64b4b
+	margin-bottom 10px
+	text-transform uppercase
+.Video
+	display flex
+	justify-content space-around
+	margin-bottom 10px
+.TestActive
+	margin 0 auto
+.Hide
+	display none
+.Test
+	&-LabelWrap
+		display flex
+		flex-direction column

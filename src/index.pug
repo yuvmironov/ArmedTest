@@ -1,0 +1,50 @@
+head
+	meta(charset="UTF-8")
+	title Тест для менеджеров
+	link(rel="stylesheet" type="text/css" href="main.css")
+	
+body#body
+	h2.Header#HeaderFirst 1. Просмотрите все видео ролики
+	.Video#Video
+		iframe.Video-Item(width="560" height="315" src="https://www.youtube.com/embed/2jojeFEMUcU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+		iframe.Video-Item(width="560" height="315" src="https://www.youtube.com/embed/o6Y8FVFqPI8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+		iframe.Video-Item(width="560" height="315" src="https://www.youtube.com/embed/x2qznaaA79Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+		
+	h2.Header 2. Пройдите тест
+	a#TestActive.TestActive.Button.Button_Color_Red.Button_Size_Lg(href="#") 
+		span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase Пройти
+	.Test.Hide#Test
+		//p.Test-Question Вопрос
+		//.Test-LabelWrap
+			label.Test-Label
+				input.Test-Input(type="radio" name="quest1" value='true')
+				|Ответ
+			label.Test-Label
+				input.Test-Input(type="radio" name="quest1" value='false')
+				|Ответ 1
+			label.Test-Label
+				input.Test-Input(type="radio" name="quest1" value='false')
+				|Ответ 2
+			label.Test-Label
+				input.Test-Input(type="radio" name="quest1" value='false')
+				|Ответ 3
+		//hr
+		//p.Test-Question Вопрос 2
+		//.Test-LabelWrap
+			label.Test-Label
+				input.Test-Input(type="radio" name="quest2" value='true')
+				|Ответ
+			label.Test-Label
+				input.Test-Input(type="radio" name="quest2" value='false')
+				|Ответ 1
+			label.Test-Label
+				input.Test-Input(type="radio" name="quest2" value='false')
+				|Ответ 2
+			label.Test-Label
+				input.Test-Input(type="radio" name="quest2" value='false')
+				|Ответ 3
+		//hr
+		//a#TestCheck.TestCheck.Button.Button_Color_Red.Button_Size_Lg(href="#" onclick="checkTest();") 
+			span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase Проверить
+				
+	script(src='main.js')
