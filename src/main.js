@@ -5,6 +5,8 @@ var buttonTest = document.getElementById('TestActive');
 var buttonCheck = document.getElementById('TestCheck');
 var bodyContent = document.getElementById('body');
 var testForm = document.getElementById('TestForm');
+var headTwo = document.getElementsByClassName('HeaderTwo');
+
 var count = 0;
 var randomMass = [];
 
@@ -80,6 +82,10 @@ function checkTest() {
 		videoHeader.classList.remove('Hide');
 		videoBlock.classList.remove('Hide');
 		buttonTest.classList.remove('Hide');
+		for (var i = 0; i < headTwo.length; i++) {
+			headTwo[i].classList.remove('Hide');
+		}
+	
 		//timer.classList.add('Hide');
 	} else {
 		bodyContent.innerHTML = '<h1 class="Test-Answer">Поздравляем, вы успешно прошли тест, данное окно можно закрыть.<br> Количество правильных ответов <span class="GoodAnswer">' + itogo + '</span> из ' + count + ' </h1>';
@@ -93,6 +99,10 @@ buttonTest.addEventListener('click', function (event) {
 	videoBlock.classList.add('Hide');
 	testBlock.classList.remove('Hide');
 	buttonTest.classList.add('Hide');
+	for (var i = 0; i < headTwo.length; i++) {
+		headTwo[i].classList.add('Hide');
+	}
+	
 	//timer.classList.remove('Hide');
 	var t = setInterval(function () {
 		function f(x) {
